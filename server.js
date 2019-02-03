@@ -44,21 +44,21 @@ app.use(express.static(__dirname + '/public'));
 // Route Handling
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-    pageTitle: 'Home Page',
+    pageTitle: 'Home',
     homeWelcome: 'Welcome to my site!'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Page',
+    pageTitle: 'About',
     aboutWelcome: 'Thank you for visiting the about page.'
   });
 });
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
-    pageTitle: 'Projects Page',
+    pageTitle: 'Projects',
     projectWelcome: 'Thank you for visiting the projects page.'
   });
 });
